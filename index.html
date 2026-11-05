@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Wemimi spreadsheet: guida a taglie, foto QC e categorie</title>
+<meta name="description" content="Wemimi spreadsheet in italiano: esplora dieci categorie, confronta taglie e foto QC e prepara una selezione ragionata con le guide di acquisto.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#702b3e">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:title" content="Wemimi spreadsheet | Il quaderno delle scelte">
+<meta property="og:description" content="Scarpe, abbigliamento e accessori: una guida indipendente per confrontare misure, dettagli e costi prima di scegliere.">
+<meta property="og:image" content="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{
+  --paper:#f5f0e7;
+  --ink:#292527;
+  --wine:#702b3e;
+  --muted:#655d59;
+  --line:#d9cec2;
+  --soft:#e9dfd1;
+  --white:#fffcf7
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font:16px/1.7 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+a{
+  color:inherit;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px
+}
+a:hover{color:var(--wine)}
+a:focus-visible,summary:focus-visible{
+  outline:3px solid var(--wine);
+  outline-offset:5px
+}
+img{display:block;max-width:100%;height:auto}
+h1,h2,h3,p,figure{margin:0}
+h1,h2,h3{line-height:1.12;text-wrap:balance}
+h1,h2,.serif{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400
+}
+h1{
+  font-size:clamp(2.8rem,6.2vw,5.6rem);
+  letter-spacing:-.055em
+}
+h2{
+  font-size:clamp(2rem,4vw,3.2rem);
+  letter-spacing:-.035em
+}
+h3{font-size:1.2rem}
+p+p{margin-top:1rem}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+.top{border-bottom:1px solid var(--line)}
+.masthead{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  padding:22px 0
+}
+.brand{
+  font-weight:800;
+  letter-spacing:-.04em;
+  font-size:1.4rem;
+  text-decoration:none
+}
+.brand span{color:var(--wine)}
+.edition,.eyebrow{
+  font-size:.72rem;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font-weight:750
+}
+.edition{color:var(--muted)}
+.toplink{font-size:.85rem;font-weight:700}
+.categories{padding:26px 0}
+.sectionline{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap:16px;
+  margin-bottom:16px
+}
+.sectionline p{font-size:.8rem;color:var(--muted)}
+.category-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:1px;
+  background:var(--line);
+  border:1px solid var(--line)
+}
+.category{
+  padding:16px;
+  background:var(--white);
+  text-decoration:none;
+  min-height:106px;
+  transition:background .15s
+}
+.category:hover{background:var(--soft)}
+.category strong{
+  display:block;
+  font-size:.92rem;
+  line-height:1.3;
+  margin:5px 0
+}
+.category small{
+  display:block;
+  color:var(--muted);
+  font-size:.74rem;
+  line-height:1.5
+}
+.num{color:var(--wine);font-size:.68rem;font-weight:750}
+.hero{
+  display:grid;
+  grid-template-columns:1.05fr 1fr;
+  gap:48px;
+  align-items:center;
+  padding:45px 0 60px
+}
+.hero .eyebrow{color:var(--wine);margin-bottom:20px}
+.intro{
+  font-size:1.06rem;
+  color:var(--muted);
+  margin-top:25px;
+  max-width:54ch
+}
+.button{
+  display:inline-flex;
+  align-items:center;
+  gap:20px;
+  background:var(--wine);
+  color:white;
+  padding:13px 21px;
+  text-decoration:none;
+  font-size:.88rem;
+  font-weight:700;
+  margin-top:26px
+}
+.button:hover{background:#542030;color:white}
+.hero figure{background:white;border:1px solid var(--line)}
+.hero img{
+  width:100%;
+  aspect-ratio:1.15;
+  object-fit:contain
+}
+.caption{
+  font-size:.75rem;
+  color:var(--muted);
+  border-top:1px solid var(--line);
+  padding:13px 18px;
+  line-height:1.55
+}
+.answer{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+  background:var(--wine);
+  color:var(--white);
+  padding:36px;
+  margin-bottom:65px
+}
+.answer h2{font-size:2rem}
+.answer p{font-size:1.02rem}
+.section{padding:0 0 65px}
+.sectionhead{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:end;
+  margin-bottom:28px
+}
+.sectionhead .eyebrow{color:var(--wine);margin-bottom:12px}
+.sectionhead>p{color:var(--muted);max-width:55ch}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px
+}
+.card{border:1px solid var(--line);background:var(--white)}
+.card img{
+  width:100%;
+  aspect-ratio:1;
+  object-fit:contain;
+  background:#fff
+}
+.cardbody{padding:23px}
+.cardbody .eyebrow{color:var(--wine);margin-bottom:10px}
+.cardbody p{
+  font-size:.88rem;
+  color:var(--muted);
+  margin:14px 0
+}
+.cardbody a{font-size:.85rem;font-weight:700}
+.note{font-size:.78rem;color:var(--muted);margin-top:18px}
+.reading{border-top:1px solid var(--line)}
+.article{
+  display:grid;
+  grid-template-columns:70px 1fr 1.3fr;
+  gap:28px;
+  padding:34px 0;
+  border-bottom:1px solid var(--line)
+}
+.article .index{font:2.5rem/1 Georgia,serif;color:var(--wine)}
+.article h3{font:1.65rem/1.2 Georgia,serif}
+.article .label{
+  color:var(--wine);
+  font-size:.72rem;
+  margin-bottom:12px;
+  font-weight:700;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+.article p{font-size:.93rem}
+.article ul{padding-left:20px;margin:14px 0 0}
+.article li{margin-top:7px;font-size:.9rem}
+.tablebox{
+  overflow-x:auto;
+  border:1px solid var(--line);
+  margin-top:26px
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:var(--white);
+  min-width:580px;
+  text-align:left;
+  font-size:.88rem
+}
+caption{
+  text-align:left;
+  padding:17px 20px;
+  font-weight:700;
+  background:var(--soft)
+}
+th,td{
+  padding:16px 20px;
+  border-bottom:1px solid var(--line);
+  vertical-align:top
+}
+thead{background:#eee4d9}
+tbody tr:last-child td,tbody tr:last-child th{border-bottom:0}
+.faq{
+  display:grid;
+  grid-template-columns:.8fr 1.5fr;
+  gap:70px
+}
+.faq-intro p{color:var(--muted);margin-top:18px}
+.questions{border-top:1px solid var(--line)}
+details{border-bottom:1px solid var(--line)}
+summary{
+  cursor:pointer;
+  padding:20px 30px 20px 0;
+  font-weight:650;
+  line-height:1.5
+}
+details p{
+  padding:0 0 22px;
+  color:var(--muted);
+  font-size:.92rem
+}
+.closing{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+  border-top:1px solid var(--line);
+  padding:36px 0 50px
+}
+.closing h2{font-size:2rem}
+.closing .button{margin:0;flex-shrink:0}
+footer{
+  background:#282326;
+  color:#eee6dc;
+  padding:32px 0;
+  font-size:.79rem
+}
+footer p{max-width:95ch}
+footer .footbrand{
+  font-size:1.1rem;
+  font-weight:750;
+  margin-bottom:12px
+}
+footer a{display:inline-block;margin-top:14px;color:white}
+@media(max-width:900px){
+  .category-grid{grid-template-columns:repeat(3,1fr)}
+  .hero{gap:25px}
+  .article{grid-template-columns:45px 1fr}
+  .article .text{grid-column:2}
+  .faq{gap:30px}
+  .gallery{gap:12px}
+  .cardbody{padding:17px}
+  .edition{display:none}
+}
+@media(max-width:620px){
+  .masthead{padding:17px 0}
+  .brand{font-size:1.15rem}
+  .toplink{font-size:.72rem}
+  .category-grid{grid-template-columns:repeat(2,1fr)}
+  .category{min-height:98px;padding:13px}
+  .sectionline p{display:none}
+  .hero{
+    grid-template-columns:1fr;
+    padding:24px 0 35px;
+    gap:27px
+  }
+  .hero img{aspect-ratio:1.3}
+  .intro{font-size:1rem}
+  .answer{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:26px;
+    margin-bottom:42px
+  }
+  .sectionhead{grid-template-columns:1fr;gap:18px}
+  .gallery{grid-template-columns:1fr}
+  .card{display:grid;grid-template-columns:40% 1fr}
+  .card img{height:100%;aspect-ratio:auto;min-height:230px}
+  .cardbody h3{font-size:1.05rem}
+  .cardbody p{font-size:.81rem}
+  .article{gap:16px;padding:28px 0}
+  .article .index{font-size:2rem}
+  .faq{grid-template-columns:1fr;gap:26px}
+  .section{padding-bottom:45px}
+  .closing{display:block}
+  .closing .button{margin-top:22px}
+  .sectionhead h2{max-width:16ch}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"WebPage",
+      "name":"Wemimi spreadsheet: guida a taglie, foto QC e categorie",
+      "description":"Guida indipendente in italiano per confrontare categorie, misure, fotografie e costi prima di scegliere.",
+      "inLanguage":"it",
+      "about":{
+        "@type":"Thing",
+        "name":"Wemimi spreadsheet"
+      }
+    },
+    {
+      "@type":"Article",
+      "headline":"Taglie Wemimi: partire dalle misure, non dalla lettera",
+      "inLanguage":"it",
+      "description":"Come confrontare centimetri, vestibilità e punti di misura prima di selezionare una taglia.",
+      "articleBody":"Misura un capo che indossi volentieri e confronta gli stessi punti con la tabella del venditore. Per una felpa controlla torace, spalle, maniche e lunghezza; per i pantaloni vita, cavallo e interno gamba. Le sigle S, M e L possono indicare misure diverse. Per le scarpe verifica la tabella del modello e l'unità indicata."
+    },
+    {
+      "@type":"Article",
+      "headline":"Foto QC Wemimi: chiedere l'immagine che manca",
+      "inLanguage":"it",
+      "description":"Una lista di controlli per scarpe, abbigliamento, cappelli e accessori.",
+      "articleBody":"Confronta la variante selezionata con le foto ricevute. Per le sneakers osserva suola, punta e tallone; per una maglietta controlla cuciture e stampa; per un cappello verifica visiera e regolazione. Per i gioielli chiedi informazioni sui materiali. Le fotografie non certificano autenticità o composizione."
+    },
+    {
+      "@type":"Article",
+      "headline":"Guida Wemimi: il costo del carrello non è il costo finale",
+      "inLanguage":"it",
+      "description":"Quali voci annotare per valutare una selezione e la sua spedizione.",
+      "articleBody":"Distingui il prezzo dell'articolo dal trasporto locale, dalle commissioni, dall'imballaggio e dalla spedizione internazionale. Aggiungi gli eventuali oneri applicabili alla destinazione. Un articolo leggero può occupare molto spazio. Per una consegna in Italia chiedi un preventivo aggiornato e verifica le condizioni del servizio scelto."
+    },
+    {
+      "@type":"FAQPage",
+      "inLanguage":"it",
+      "mainEntity":[
+        {
+          "@type":"Question",
+          "name":"Che cos'è una Wemimi spreadsheet?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Nel contesto delle ricerche di acquisto, è una raccolta di riferimenti a prodotti da confrontare per categoria, variante e misure. Questa pagina offre una guida editoriale: non include un file Excel né un catalogo sincronizzato con Wemimi."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Questa pagina è collegata ufficialmente a Wemimi o ai marchi mostrati?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. È una risorsa indipendente. I marchi identificano soltanto i riferimenti visivi; non indicano collaborazione, approvazione o autenticità degli articoli presenti su siti terzi."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Dove portano i pulsanti delle categorie?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Aprono le rispettive categorie su HipobuyFind. Gli altri collegamenti portano alla pagina principale di HipobuyFind. Non sono collegamenti al pagamento o alla piattaforma Wemimi."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Come confronto le taglie prima di acquistare?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Misura un capo o una scarpa di riferimento e confronta gli stessi punti, nella stessa unità, con la tabella specifica del modello. Se mancano misure importanti, chiedile prima di scegliere la variante."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Le foto QC dimostrano che un prodotto è autentico?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"No. Le foto QC possono aiutare a osservare dettagli visibili e corrispondenza della variante. Non certificano autenticità, materiali, sicurezza o durata."
+          }
+        },
+        {
+          "@type":"Question",
+          "name":"Cosa fare se un vecchio link Wemimi non funziona?",
+          "acceptedAnswer":{
+            "@type":"Answer",
+            "text":"Conserva il riferimento originale e cerca nuovamente il modello per categoria e nome. Confronta venditore, fotografie e varianti: un nuovo collegamento non garantisce lo stesso articolo. Verifica anche se il servizio scelto supporta ancora quel collegamento."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!--
+File: index.html.
+
+Ricerca editoriale del 5 novembre 2026.
+Query selezionata casualmente: "Wemimi spreadsheet".
+
+Google non ha restituito una SERP accessibile: non è verificabile
+l'ordine dei primi dieci risultati. Sono stati analizzati risultati e
+pagine disponibili dalla ricerca web, senza copiarne il testo o
+adottarne promozioni e affermazioni commerciali.
+
+Riferimenti di ricerca, non collegamenti di navigazione:
+1. wemimi.net
+2. wemimi.shop
+3. wemimispreadsheet.com
+4. spreadfinds.com/wemimi
+5. wemimispreadsheet.shop
+6. wemimisheet.com
+7. wemimisheets.com
+8. wemimifinds.com/wemimi-finds/
+9. reddit.com/r/WemimiOfficial/comments/1jzkfee
+10. hubbuycnsheets.com
+
+Alcuni contenuti erano disponibili soltanto come estratti indicizzati;
+alcuni indirizzi reindirizzano o non rispondono. Non sono dieci domini
+verificati della prima pagina Google.
+
+Quattro temi secondari:
+- finds Wemimi
+- guida Wemimi
+- foto QC Wemimi
+- taglie Wemimi
+
+Intenti di coda lunga sviluppati nel testo:
+confronto sneakers; misure felpe; vestibilità magliette; volume giacche;
+interno gamba; regolazione cappelli; taglie completi; composizione intimo;
+stampa maglie sportive; materiali accessori; tabella scarpe;
+lunghezza piede; misure torace; spalle felpa; lunghezza maniche;
+vita pantaloni; varianti colore; foto suola; foto tallone;
+cuciture maglietta; ricamo cappello; chiusure gioielli;
+dettagli mancanti; trasporto locale; commissioni servizio;
+peso volumetrico; preventivo Italia; vecchi link;
+autenticità foto QC; confronto venditore.
+
+Nessun canonical o URL editoriale inventato:
+impostare l'URL canonico reale dopo aver scelto il dominio di pubblicazione.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/jtgjm/">
+</head>
+<body>
+<header class="top">
+  <div class="wrap masthead">
+    <a class="brand" href="https://www.hipobuyfind.com">QUADERNO<span> / </span>FINDS</a>
+    <span class="edition">Edizione italiana · Scarpe, capi, dettagli</span>
+    <a class="toplink" href="https://www.hipobuyfind.com">Esplora HipobuyFind ↗</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="categories" aria-label="Categorie di prodotti su HipobuyFind">
+    <div class="sectionline">
+      <span class="eyebrow">Prima di tutto, una categoria</span>
+      <p>Dieci ingressi diretti su HipobuyFind</p>
+    </div>
+    <div class="category-grid">
+      <a class="category" href="https://hipobuyfind.com/category-911-Shoes.html">
+        <span class="num">01 ↗</span>
+        <strong>Scarpe</strong>
+        <small>Sneakers: forma, calzata e suola</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">
+        <span class="num">02 ↗</span>
+        <strong>Felpe e maglioni</strong>
+        <small>Misure, tessuto e lunghezza</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-913-T-Shirts.html">
+        <span class="num">03 ↗</span>
+        <strong>Magliette</strong>
+        <small>Vestibilità, collo e stampa</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-914-Jackets.html">
+        <span class="num">04 ↗</span>
+        <strong>Giacche</strong>
+        <small>Strati, chiusure e volume</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">
+        <span class="num">05 ↗</span>
+        <strong>Pantaloni e shorts</strong>
+        <small>Vita, cavallo e interno gamba</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-916-Headwear.html">
+        <span class="num">06 ↗</span>
+        <strong>Cappelli</strong>
+        <small>Circonferenza e regolazione</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-917-Sets.html">
+        <span class="num">07 ↗</span>
+        <strong>Completi</strong>
+        <small>Confronta entrambe le taglie</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">
+        <span class="num">08 ↗</span>
+        <strong>Intimo</strong>
+        <small>Composizione e condizioni di reso</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-919-Jersey.html">
+        <span class="num">09 ↗</span>
+        <strong>Maglie sportive</strong>
+        <small>Stampa, stemmi e misure</small>
+      </a>
+      <a class="category" href="https://hipobuyfind.com/category-920-Accessories.html">
+        <span class="num">10 ↗</span>
+        <strong>Accessori</strong>
+        <small>Materiali, chiusure e dimensioni</small>
+      </a>
+    </div>
+  </nav>
+
+  <section class="hero" aria-labelledby="title">
+    <div>
+      <p class="eyebrow">Una selezione comincia da una domanda</p>
+      <h1 id="title">Wemimi spreadsheet.<br>Guarda meglio,<br>scegli con criterio.</h1>
+      <p class="intro">Una guida in italiano per trasformare i finds Wemimi in una selezione ragionata: una categoria alla volta, misure confrontabili e dettagli da controllare prima di acquistare.</p>
+      <a class="button" href="https://www.hipobuyfind.com">
+        Apri il catalogo HipobuyFind <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+    <figure>
+      <img
+        src="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp"
+        alt="Nike Air Force 1 ’07 bianca vista di lato, con Swoosh e suola bianca"
+        width="800"
+        height="696"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async">
+      <figcaption class="caption">
+        Riferimento visivo · Nike Air Force 1 ’07.<br>
+        Per confrontare una sneaker, parti da modello, variante e tabella delle misure.
+      </figcaption>
+    </figure>
+  </section>
+
+  <aside class="answer" aria-label="Definizione rapida">
+    <h2>A cosa serve questa guida?</h2>
+    <p>Una <strong>Wemimi spreadsheet</strong> può essere un punto di partenza per raccogliere riferimenti. Qui trovi criteri di confronto e collegamenti alle categorie di HipobuyFind. Questa pagina non contiene un foglio scaricabile e non verifica in tempo reale disponibilità o compatibilità con Wemimi.</p>
+  </aside>
+
+  <section class="section" aria-labelledby="visual-title">
+    <div class="sectionhead">
+      <div>
+        <p class="eyebrow">Atlante dei dettagli</p>
+        <h2 id="visual-title">L'immagine ispira.<br>La verifica decide.</h2>
+      </div>
+      <p>Tre riferimenti diversi, tre domande concrete. Le fotografie illustrano i modelli: non rappresentano un'offerta né garantiscono la presenza dello stesso articolo sul sito di destinazione.</p>
+    </div>
+
+    <div class="gallery">
+      <article class="card">
+        <img
+          src="https://hk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-lv-skate-sneaker--BO9U3PMI31_PM2_Front%20view.jpg"
+          alt="Sneaker Louis Vuitton LV Skate beige con lacci spessi e fiore Monogram laterale"
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async">
+        <div class="cardbody">
+          <p class="eyebrow">01 / Proporzioni</p>
+          <h3>LV Skate: osserva i volumi</h3>
+          <p>Confronta ingombro della punta, altezza della suola e imbottitura. Per la calzata, usa la tabella del modello e verifica cosa misura il valore in centimetri.</p>
+          <a href="https://www.hipobuyfind.com">Confronta altri riferimenti ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1659595532/681264_3HAGJ_2564_001_100_0000_Light-Casquette-en-toileGG-jumbo.jpg"
+          alt="Cappello da baseball Gucci in tela beige con motivo GG jumbo e visiera marrone"
+          width="600"
+          height="600"
+          loading="lazy"
+          decoding="async">
+        <div class="cardbody">
+          <p class="eyebrow">02 / Vestibilità</p>
+          <h3>Gucci GG: oltre il motivo</h3>
+          <p>Per un cappello, controlla circonferenza minima e massima, profondità della calotta e sistema di regolazione. Una foto frontale da sola non descrive la vestibilità.</p>
+          <a href="https://www.hipobuyfind.com">Esplora i riferimenti moda ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img
+          src="https://productimg.xbiao.com/jewellery/13/700_450/37397154477297724.jpg"
+          alt="Orecchini Dior Tribales con perle bianche di due dimensioni e montatura dorata"
+          width="700"
+          height="450"
+          loading="lazy"
+          decoding="async">
+        <div class="cardbody">
+          <p class="eyebrow">03 / Materiali</p>
+          <h3>Dior Tribales: chiedi i dettagli</h3>
+          <p>Per gli orecchini chiedi dimensioni, peso, materiali dichiarati e tipo di chiusura. La fotografia non dimostra la composizione del metallo o l'assenza di allergeni.</p>
+          <a href="https://www.hipobuyfind.com">Consulta gli accessori ↗</a>
+        </div>
+      </article>
+    </div>
+    <p class="note">Immagini di riferimento da Tike, Louis Vuitton, Gucci e Xbiao. I nomi dei marchi identificano i modelli raffigurati; non implicano un rapporto ufficiale con questa pagina.</p>
+  </section>
+
+  <section class="section" aria-labelledby="journal-title">
+    <div class="sectionhead">
+      <div>
+        <p class="eyebrow">Il quaderno pratico</p>
+        <h2 id="journal-title">Tre letture prima della scelta.</h2>
+      </div>
+      <p>Appunti di acquisto per chi cerca una guida Wemimi in italiano: meno supposizioni, informazioni più facili da confrontare.</p>
+    </div>
+
+    <div class="reading">
+      <article class="article">
+        <span class="index" aria-hidden="true">01</span>
+        <div>
+          <p class="label">Taglie e vestibilità</p>
+          <h3>Taglie Wemimi: partire dalle misure, non dalla lettera</h3>
+        </div>
+        <div class="text">
+          <p>Misura un capo che indossi volentieri e confronta gli stessi punti con la tabella del venditore. Per una felpa controlla torace, spalle, maniche e lunghezza; per i pantaloni vita, cavallo e interno gamba. Le sigle S, M e L possono indicare misure diverse. Per le scarpe verifica la tabella del modello e l'unità indicata.</p>
+          <p>Un taglio ampio non si riconosce soltanto dalla larghezza: anche spalla scesa e lunghezza cambiano l'effetto. Per una maglietta distesa, annota se il torace è misurato da ascella ad ascella. Per un completo, controlla separatamente parte superiore e pantalone.</p>
+          <ul>
+            <li>Scarpe: distingui lunghezza del piede e lunghezza interna dichiarata.</li>
+            <li>Giacche: lascia spazio agli strati che prevedi di indossare.</li>
+            <li>Cappelli: verifica l'intervallo di regolazione, non solo la dicitura «taglia unica».</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="article">
+        <span class="index" aria-hidden="true">02</span>
+        <div>
+          <p class="label">Fotografie e riscontri</p>
+          <h3>Foto QC Wemimi: chiedere l'immagine che manca</h3>
+        </div>
+        <div class="text">
+          <p>Confronta la variante selezionata con le foto ricevute. Per le sneakers osserva suola, punta e tallone; per una maglietta controlla cuciture e stampa; per un cappello verifica visiera e regolazione. Per i gioielli chiedi informazioni sui materiali. Le fotografie non certificano autenticità o composizione.</p>
+          <p>Una richiesta precisa è più utile di «mandate altre foto». Chiedi, per esempio, una vista della cucitura laterale o una misura del torace con metro visibile. Se il colore sembra diverso, considera luce e bilanciamento della fotocamera e chiedi uno scatto in condizioni più neutre.</p>
+          <ul>
+            <li>Maglie sportive: controlla allineamento della stampa e variante degli stemmi.</li>
+            <li>Felpe: osserva ricamo, polsini e attacco del cappuccio.</li>
+            <li>Accessori: richiedi un dettaglio delle chiusure e delle parti a contatto con la pelle.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="article">
+        <span class="index" aria-hidden="true">03</span>
+        <div>
+          <p class="label">Selezione e preventivo</p>
+          <h3>Guida Wemimi: il costo del carrello non è il costo finale</h3>
+        </div>
+        <div class="text">
+          <p>Distingui il prezzo dell'articolo dal trasporto locale, dalle commissioni, dall'imballaggio e dalla spedizione internazionale. Aggiungi gli eventuali oneri applicabili alla destinazione. Un articolo leggero può occupare molto spazio. Per una consegna in Italia chiedi un preventivo aggiornato e verifica le condizioni del servizio scelto.</p>
+          <p>Una giacca imbottita, una scatola da scarpe e diversi accessori producono un pacco diverso da una selezione di sole magliette. Chiedi quale peso viene utilizzato per il calcolo e come viene determinato l'eventuale peso volumetrico. Valuta una modifica dell'imballaggio solo dopo averne chiarito l'effetto sulla protezione.</p>
+          <ul>
+            <li>Annota valuta, data e voci incluse nel preventivo.</li>
+            <li>Controlla disponibilità della variante e condizioni di reso prima di pagare.</li>
+            <li>Conserva il riferimento del venditore e le opzioni selezionate.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <div class="tablebox">
+      <table>
+        <caption>Una scheda di confronto che puoi ricreare nel tuo foglio</caption>
+        <thead>
+          <tr>
+            <th scope="col">Campo</th>
+            <th scope="col">Cosa annotare</th>
+            <th scope="col">Perché serve</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Modello e origine</th>
+            <td>Nome, venditore, riferimento originale e data del controllo</td>
+            <td>Riconoscere un'inserzione modificata o sostituita</td>
+          </tr>
+          <tr>
+            <th scope="row">Variante</th>
+            <td>Colore, taglia, versione e opzioni richieste</td>
+            <td>Confrontare la stessa configurazione nelle foto</td>
+          </tr>
+          <tr>
+            <th scope="row">Misure</th>
+            <td>Centimetri, punti di misura e capo di riferimento</td>
+            <td>Valutare la vestibilità su dati confrontabili</td>
+          </tr>
+          <tr>
+            <th scope="row">Controllo</th>
+            <td>Dettaglio da verificare e fotografia necessaria</td>
+            <td>Trasformare un dubbio in una richiesta precisa</td>
+          </tr>
+          <tr>
+            <th scope="row">Costo e decisione</th>
+            <td>Voci del preventivo; confermare, chiarire o scartare</td>
+            <td>Scegliere considerando l'intero percorso</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="section faq" aria-labelledby="faq-title">
+    <div class="faq-intro">
+      <p class="eyebrow">Risposte senza giri di parole</p>
+      <h2 id="faq-title">Prima di aprire un altro link.</h2>
+      <p>Le domande essenziali su Wemimi spreadsheet, misure, collegamenti e fotografie.</p>
+    </div>
+
+    <div class="questions">
+      <details open>
+        <summary>Che cos'è una Wemimi spreadsheet?</summary>
+        <p>Nel contesto delle ricerche di acquisto, è una raccolta di riferimenti a prodotti da confrontare per categoria, variante e misure. Questa pagina offre una guida editoriale: non include un file Excel né un catalogo sincronizzato con Wemimi.</p>
+      </details>
+      <details>
+        <summary>Questa pagina è collegata ufficialmente a Wemimi o ai marchi mostrati?</summary>
+        <p>No. È una risorsa indipendente. I marchi identificano soltanto i riferimenti visivi; non indicano collaborazione, approvazione o autenticità degli articoli presenti su siti terzi.</p>
+      </details>
+      <details>
+        <summary>Dove portano i pulsanti delle categorie?</summary>
+        <p>Aprono le rispettive categorie su HipobuyFind. Gli altri collegamenti portano alla pagina principale di HipobuyFind. Non sono collegamenti al pagamento o alla piattaforma Wemimi.</p>
+      </details>
+      <details>
+        <summary>Come confronto le taglie prima di acquistare?</summary>
+        <p>Misura un capo o una scarpa di riferimento e confronta gli stessi punti, nella stessa unità, con la tabella specifica del modello. Se mancano misure importanti, chiedile prima di scegliere la variante.</p>
+      </details>
+      <details>
+        <summary>Le foto QC dimostrano che un prodotto è autentico?</summary>
+        <p>No. Le foto QC possono aiutare a osservare dettagli visibili e corrispondenza della variante. Non certificano autenticità, materiali, sicurezza o durata.</p>
+      </details>
+      <details>
+        <summary>Cosa fare se un vecchio link Wemimi non funziona?</summary>
+        <p>Conserva il riferimento originale e cerca nuovamente il modello per categoria e nome. Confronta venditore, fotografie e varianti: un nuovo collegamento non garantisce lo stesso articolo. Verifica anche se il servizio scelto supporta ancora quel collegamento.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="closing" aria-label="Continua la ricerca">
+    <div>
+      <p class="eyebrow">Dagli appunti alla selezione</p>
+      <h2>Comincia da ciò che ti serve davvero.</h2>
+    </div>
+    <a class="button" href="https://www.hipobuyfind.com">
+      Continua su HipobuyFind <span aria-hidden="true">↗</span>
+    </a>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footbrand">QUADERNO / FINDS</p>
+    <p>Guida editoriale indipendente in italiano. Questa pagina non vende prodotti, non gestisce ordini e non è il servizio ufficiale Wemimi. Prezzi, disponibilità, materiali e condizioni devono essere verificati sui siti interessati. Le immagini sono riferimenti visivi, non attestazioni di autenticità o disponibilità.</p>
+    <a href="https://www.hipobuyfind.com">HipobuyFind ↗</a>
+  </div>
+</footer>
+</body>
+</html>
